@@ -191,13 +191,45 @@ func CheckProduct(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	// Calculate counts and build not-codes string
+	countOK := 0
+	countNOT := 0
+	var notCodes []string
+
+	for _, result := range results {
+		if result.Status == "OK" {
+			countOK++
+		} else if result.Status == "NOT" {
+			countNOT++
+			notCodes = append(notCodes, result.Code)
+		}
+	}
+
+	// Build the not-codes message
+	notCodesMessage := ""
+	if len(notCodes) > 0 {
+		notCodesMessage = "The products that are not app "
+		for i, code := range notCodes {
+			if i > 0 {
+				notCodesMessage += " + "
+			}
+			notCodesMessage += code
+		}
+	}
+
+	// Create custom response with additional fields
+	response := map[string]interface{}{
+		"data":       results,
+		"count":      len(results),
+		"count-ok":   countOK,
+		"count-not":  countNOT,
+		"not-codes":  notCodesMessage,
+		"message":    "Product check completed successfully",
+	}
+
 	// Return success response
 	w.WriteHeader(http.StatusOK)
-	json.NewEncoder(w).Encode(SuccessResponse{
-		Data:    results,
-		Count:   len(results),
-		Message: "Product check completed successfully",
-	})
+	json.NewEncoder(w).Encode(response)
 }
 
 // HealthCheck handles health check requests

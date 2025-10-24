@@ -6,6 +6,39 @@ This document tracks important decisions, features, and architectural changes ma
 
 ## 2025-10-24
 
+### Enhanced CheckProduct Endpoint Response
+**Status**: ✅ Implemented
+
+Added summary statistics and formatted message to `/api/checkproduct/{itemCode}` response:
+
+**New Response Fields**:
+- `count-ok`: Total number of products with status "OK" (found in Heihu)
+- `count-not`: Total number of products with status "NOT" (not found in Heihu)
+- `not-codes`: Formatted string listing all missing products (e.g., "The products that are not app CP20250 + ABC123")
+
+**Example Response**:
+```json
+{
+  "data": [...],
+  "count": 3,
+  "count-ok": 1,
+  "count-not": 2,
+  "not-codes": "The products that are not app CP20250 + ABC123",
+  "message": "Product check completed successfully"
+}
+```
+
+**Rationale**:
+- Quick summary statistics without parsing entire data array
+- Human-readable message for missing products
+- Easy integration with reporting and alert systems
+- Simplified client-side logic for displaying validation results
+
+**Files**:
+- `handlers/bom_handler.go` - Enhanced CheckProduct() with count calculations and message formatting
+
+---
+
 ### Git Repository and GitHub Integration
 **Status**: ✅ Implemented
 

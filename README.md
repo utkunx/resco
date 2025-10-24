@@ -165,12 +165,24 @@ Response:
 {
   "data": [
     {"sequence-number": 1, "code": "360004", "status": "OK"},
-    {"sequence-number": 2, "code": "CP20250", "status": "NOT"}
+    {"sequence-number": 2, "code": "CP20250", "status": "NOT"},
+    {"sequence-number": 3, "code": "ABC123", "status": "NOT"}
   ],
-  "count": 2,
+  "count": 3,
+  "count-ok": 1,
+  "count-not": 2,
+  "not-codes": "The products that are not app CP20250 + ABC123",
   "message": "Product check completed successfully"
 }
 ```
+
+**Response Fields**:
+- `data`: Array of all products with their check status
+- `count`: Total number of products checked
+- `count-ok`: Number of products found in Heihu system
+- `count-not`: Number of products NOT found in Heihu system
+- `not-codes`: Formatted string listing all missing product codes
+- `message`: Status message
 
 **Note**: This endpoint implements rate limiting (100ms delay between requests) to comply with Heihu API limits. Response time will scale with the number of products in the BOM.
 
