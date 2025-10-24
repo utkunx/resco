@@ -1,0 +1,36 @@
+# Environment variables
+.env
+
+# Binaries
+resco
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Go workspace file
+go.work
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Output files (optional - uncomment if you don't want to track these)
+# outputs/
+
+# Temporary files
+*.tmp
+*.log

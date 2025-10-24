@@ -1,0 +1,31 @@
+{
+  "api_limits": {
+    "description": "API Call Limits and Guidelines",
+    "all_endpoints": {
+      "description": "Limits for all API endpoints",
+      "hourly_call_limit": 10000,
+      "qps": 20,
+      "notes": "10,000 calls per hour, 20 queries per second"
+    },
+    "write_endpoints": {
+      "description": "Limits for create, update, modify and other write endpoints",
+      "hourly_call_limit": 5000,
+      "qps": 10,
+      "notes": "5,000 calls per hour, 10 queries per second"
+    },
+    "specific_endpoints": {
+      "description
+      ": "Special rate limits for specific endpoints (will be updated based on usage)",
+      "work_order_query": {
+        "endpoint_name": "Work Order Query Interface",
+        "rate_limit": "Once per 10 seconds for identical request parameters",
+        "min_interval_seconds": 10
+      },
+      "task_list_query": {
+        "endpoint_name": "Task List Query Interface",
+        "rate_limit": "Once per 10 seconds for identical request parameters",
+        "min_interval_seconds": 10
+      }
+    }
+  }
+}

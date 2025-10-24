@@ -1,0 +1,201 @@
+{
+  "code": "01000000",
+  "data": {
+    "data": [
+      {
+        "costPrice": 1,
+        "criticalFlag": 0,
+        "customFieldValues": [
+          {
+            "associatedObjectValueDetail": null,
+            "customFieldMetadata": {
+              "$ref": "#/reference/allCustomFieldMetadata/product176120143461335"
+            },
+            "fieldId": 2993,
+            "value": null
+          },
+          {
+            "associatedObjectValueDetail": null,
+            "customFieldMetadata": {
+              "$ref": "#/reference/allCustomFieldMetadata/product17610128657516"
+            },
+            "fieldId": 2992,
+            "value": null
+          }
+        ],
+        "finishedProductStorageInspectionSpecificationsId": null,
+        "finishedProductStorageInspectionSpecificationsName": null,
+        "id": 124766,
+        "inspectionSpecificationsTypes": null,
+        "inspectionSpecificationsTypesName": null,
+        "materialIncomingInspectionSpecificationsId": null,
+        "materialIncomingInspectionSpecificationsName": null,
+        "maxQty": 1,
+        "minQty": 1,
+        "originType": 0,
+        "prcessRoutingCode": null,
+        "productCode": "CP202509030001",
+        "productName": "123",
+        "productSpecification": "1",
+        "productionType": 1,
+        "safetyQty": 1,
+        "salesDeliveryInspectionSpecificationsId": null,
+        "salesDeliveryInspectionSpecificationsName": null,
+        "salesPrice": 1,
+        "stockQty": 1003,
+        "unit": "个",
+        "vendorCode": null
+      },
+      {
+        "costPrice": null,
+        "criticalFlag": 0,
+        "customFieldValues": [
+          {
+            "associatedObjectValueDetail": null,
+            "customFieldMetadata": {
+              "$ref": "#/reference/allCustomFieldMetadata/product176120143461335"
+            },
+            "fieldId": 2993,
+            "value": null
+          },
+          {
+            "associatedObjectValueDetail": null,
+            "customFieldMetadata": {
+              "$ref": "#/reference/allCustomFieldMetadata/product17610128657516"
+            },
+            "fieldId": 2992,
+            "value": null
+          }
+        ],
+        "finishedProductStorageInspectionSpecificationsId": null,
+        "finishedProductStorageInspectionSpecificationsName": null,
+        "id": 124776,
+        "inspectionSpecificationsTypes": null,
+        "inspectionSpecificationsTypesName": null,
+        "materialIncomingInspectionSpecificationsId": null,
+        "materialIncomingInspectionSpecificationsName": null,
+        "maxQty": 10000000,
+        "minQty": null,
+        "originType": 1,
+        "prcessRoutingCode": "GYLX202509240001",
+        "productCode": "CP202509261155",
+        "productName": "今日时间",
+        "productSpecification": null,
+        "productionType": null,
+        "safetyQty": 500000,
+        "salesDeliveryInspectionSpecificationsId": null,
+        "salesDeliveryInspectionSpecificationsName": null,
+        "salesPrice": null,
+        "stockQty": 0,
+        "unit": "个",
+        "vendorCode": null
+      }
+    ],
+    "pageNum": 1,
+    "pageSize": 10,
+    "total": 2
+  },
+  "msg": "成功",
+  "reference": {
+    "allCustomFieldMetadata": {
+      "product17610128657516": {
+        "allowAddOption": null,
+        "associatedBusinessObjectField": null,
+        "associatedBusinessObjectFieldDetail": null,
+        "associatedBusinessObjectFilter": null,
+        "associatedBusinessObjectName": null,
+        "associatedViewId": null,
+        "associatedViewName": null,
+        "blModifyScanResult": null,
+        "blReadonly": null,
+        "blRepeatInput": null,
+        "blRequired": null,
+        "blScanCodeInput": null,
+        "blSearch": false,
+        "blTextArea": null,
+        "blThousandSeparator": null,
+        "businessObjectType": null,
+        "createdAt": null,
+        "creator": null,
+        "creatorId": null,
+        "dataFillRule": null,
+        "dataFillRuleDetail": null,
+        "dateTimeDisplayType": null,
+        "decimalLength": null,
+        "defaultValue": null,
+        "deletedAt": null,
+        "description": null,
+        "displayAttribute": null,
+        "displayAttributeDetail": null,
+        "displayAttributeName": null,
+        "expression": null,
+        "fieldName": "product17610128657516",
+        "hidden": null,
+        "id": null,
+        "lineNumber": null,
+        "name": "万里牛商品编码",
+        "optionColors": null,
+        "options": null,
+        "orgId": null,
+        "showType": null,
+        "sort": 0,
+        "targetType": null,
+        "targetTypeDisplayName": null,
+        "tips": null,
+        "type": 1,
+        "updatedAt": null,
+        "updator": null,
+        "updatorId": null
+      },
+      "product176120143461335": {
+        "allowAddOption": null,
+        "associatedBusinessObjectField": null,
+        "associatedBusinessObjectFieldDetail": null,
+        "associatedBusinessObjectFilter": null,
+        "associatedBusinessObjectName": null,
+        "associatedViewId": null,
+        "associatedViewName": null,
+        "blModifyScanResult": null,
+        "blReadonly": null,
+        "blRepeatInput": null,
+        "blRequired": null,
+        "blScanCodeInput": null,
+        "blSearch": false,
+        "blTextArea": null,
+        "blThousandSeparator": null,
+        "businessObjectType": null,
+        "createdAt": null,
+        "creator": null,
+        "creatorId": null,
+        "dataFillRule": null,
+        "dataFillRuleDetail": null,
+        "dateTimeDisplayType": null,
+        "decimalLength": null,
+        "defaultValue": null,
+        "deletedAt": null,
+        "description": null,
+        "displayAttribute": null,
+        "displayAttributeDetail": null,
+        "displayAttributeName": null,
+        "expression": null,
+        "fieldName": "product176120143461335",
+        "hidden": null,
+        "id": null,
+        "lineNumber": null,
+        "name": "自定义字段2",
+        "optionColors": null,
+        "options": null,
+        "orgId": null,
+        "showType": null,
+        "sort": 0,
+        "targetType": null,
+        "targetTypeDisplayName": null,
+        "tips": null,
+        "type": 1,
+        "updatedAt": null,
+        "updator": null,
+        "updatorId": null
+      }
+    }
+  }
+}

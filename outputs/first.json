@@ -1,0 +1,476 @@
+{
+  "data": [
+    {
+      "bomrec_code": "360004",
+      "ad": "Amortisör , Kabin - Körüklü",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "216002",
+      "sub_item_name": "Kabin Körüğü",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 1
+    },
+    {
+      "bomrec_code": "360004",
+      "ad": "Amortisör , Kabin - Körüklü",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "116004P",
+      "sub_item_name": "Amortisör , Kabin",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 1
+    },
+    {
+      "bomrec_code": "116004P",
+      "ad": "Amortisör , Kabin",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "116004P-050",
+      "sub_item_name": "Yarı Mamul Amortisör",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 2
+    },
+    {
+      "bomrec_code": "116004P",
+      "ad": "Amortisör , Kabin",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "700004",
+      "sub_item_name": "FILEPOX PR-7180 SİYAH BOYA",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 0.0199,
+      "depth": 2
+    },
+    {
+      "bomrec_code": "116004P",
+      "ad": "Amortisör , Kabin",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "700005",
+      "sub_item_name": "FILACURE EP-10400 SERTLEŞTİRİCİ",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 0.00284,
+      "depth": 2
+    },
+    {
+      "bomrec_code": "116004P",
+      "ad": "Amortisör , Kabin",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "700006",
+      "sub_item_name": "FILATHIN EP-1002 TİNER",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 0.0111,
+      "depth": 2
+    },
+    {
+      "bomrec_code": "116004P",
+      "ad": "Amortisör , Kabin",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "94601052",
+      "sub_item_name": "Tüm Yüzük",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 2
+    },
+    {
+      "bomrec_code": "116004P",
+      "ad": "Amortisör , Kabin",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "84750291",
+      "sub_item_name": "Burçlu Lastik",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 2,
+      "depth": 2
+    },
+    {
+      "bomrec_code": "116004P",
+      "ad": "Amortisör , Kabin",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "80250130",
+      "sub_item_name": "Plastik Gövde Kapağı",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 2
+    },
+    {
+      "bomrec_code": "116004P",
+      "ad": "Amortisör , Kabin",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "80250123",
+      "sub_item_name": "Sıkıştırma Tamponu",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 2
+    },
+    {
+      "bomrec_code": "116004P",
+      "ad": "Amortisör , Kabin",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "PS-RSC-014",
+      "sub_item_name": "PAKETLEME STANDARDI (RESCO BASKILI ÇOKLU KOLİ)",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 2
+    },
+    {
+      "bomrec_code": "116004P",
+      "ad": "Amortisör , Kabin",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "PS-RSC-017",
+      "sub_item_name": "PAKETLEME STANDARTI RESCO",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 2
+    },
+    {
+      "bomrec_code": "94601052",
+      "ad": "Tüm Yüzük",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "84610150",
+      "sub_item_name": "Düz Yüzük",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 3
+    },
+    {
+      "bomrec_code": "94601052",
+      "ad": "Tüm Yüzük",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "84500039",
+      "sub_item_name": "Tüm Yüzük Somunu",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 3
+    },
+    {
+      "bomrec_code": "116004P-050",
+      "ad": "Yarı Mamul Amortisör",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "21121466-602",
+      "sub_item_name": "Tüm Gövde Borusu",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 3
+    },
+    {
+      "bomrec_code": "116004P-050",
+      "ad": "Yarı Mamul Amortisör",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "21121466-600",
+      "sub_item_name": "Silindir Borusu",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 3
+    },
+    {
+      "bomrec_code": "116004P-050",
+      "ad": "Yarı Mamul Amortisör",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "83120002",
+      "sub_item_name": "Taban Valf Çanağı",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 3
+    },
+    {
+      "bomrec_code": "116004P-050",
+      "ad": "Yarı Mamul Amortisör",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "83230001",
+      "sub_item_name": "Taban Valf Çek Valf Yayı",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 3
+    },
+    {
+      "bomrec_code": "116004P-050",
+      "ad": "Yarı Mamul Amortisör",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "83040005",
+      "sub_item_name": "Taban Valfi Geçiş Pulu",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 3
+    },
+    {
+      "bomrec_code": "116004P-050",
+      "ad": "Yarı Mamul Amortisör",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "77250030",
+      "sub_item_name": "Disk",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 4,
+      "depth": 3
+    },
+    {
+      "bomrec_code": "116004P-050",
+      "ad": "Yarı Mamul Amortisör",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "77250020",
+      "sub_item_name": "Disk",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 3
+    },
+    {
+      "bomrec_code": "116004P-050",
+      "ad": "Yarı Mamul Amortisör",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "78250006",
+      "sub_item_name": "Sıkıştırma Ayar Pulu",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 3
+    },
+    {
+      "bomrec_code": "116004P-050",
+      "ad": "Yarı Mamul Amortisör",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "83340002",
+      "sub_item_name": "Taban Valfi Gövdesi",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 3
+    },
+    {
+      "bomrec_code": "116004P-050",
+      "ad": "Yarı Mamul Amortisör",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "82220002",
+      "sub_item_name": "Durdurucu Pul",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 3
+    },
+    {
+      "bomrec_code": "116004P-050",
+      "ad": "Yarı Mamul Amortisör",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "76250170",
+      "sub_item_name": "Retainer",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 3
+    },
+    {
+      "bomrec_code": "116004P-050",
+      "ad": "Yarı Mamul Amortisör",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "73250030",
+      "sub_item_name": "Giriş Pulu",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 3
+    },
+    {
+      "bomrec_code": "116004P-050",
+      "ad": "Yarı Mamul Amortisör",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "72410020",
+      "sub_item_name": "Zıplama Ayar Pulu",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 3
+    },
+    {
+      "bomrec_code": "116004P-050",
+      "ad": "Yarı Mamul Amortisör",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "82040032",
+      "sub_item_name": "Piston",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 3
+    },
+    {
+      "bomrec_code": "116004P-050",
+      "ad": "Yarı Mamul Amortisör",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "75250020",
+      "sub_item_name": "Disk",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 3
+    },
+    {
+      "bomrec_code": "116004P-050",
+      "ad": "Yarı Mamul Amortisör",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "75250025",
+      "sub_item_name": "Disk",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 2,
+      "depth": 3
+    },
+    {
+      "bomrec_code": "116004P-050",
+      "ad": "Yarı Mamul Amortisör",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "76250115",
+      "sub_item_name": "Retainer",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 3
+    },
+    {
+      "bomrec_code": "116004P-050",
+      "ad": "Yarı Mamul Amortisör",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "76250150",
+      "sub_item_name": "Retainer",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 3
+    },
+    {
+      "bomrec_code": "116004P-050",
+      "ad": "Yarı Mamul Amortisör",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "82840002",
+      "sub_item_name": "Valf Pulu",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 3
+    },
+    {
+      "bomrec_code": "116004P-050",
+      "ad": "Yarı Mamul Amortisör",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "80100064",
+      "sub_item_name": "Somun",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 3
+    },
+    {
+      "bomrec_code": "116004P-050",
+      "ad": "Yarı Mamul Amortisör",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "21121466-150",
+      "sub_item_name": "ZTY Piston Kolu",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 3
+    },
+    {
+      "bomrec_code": "116004P-050",
+      "ad": "Yarı Mamul Amortisör",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "81950016",
+      "sub_item_name": "Zıplama Tamponu",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 3
+    },
+    {
+      "bomrec_code": "116004P-050",
+      "ad": "Yarı Mamul Amortisör",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "81240142",
+      "sub_item_name": "Kılavuz",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 3
+    },
+    {
+      "bomrec_code": "116004P-050",
+      "ad": "Yarı Mamul Amortisör",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "81150144",
+      "sub_item_name": "Keçe",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 3
+    },
+    {
+      "bomrec_code": "116004P-050",
+      "ad": "Yarı Mamul Amortisör",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "700001",
+      "sub_item_name": "AMORTISÖR YAGI-HD15",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 0.099,
+      "depth": 3
+    },
+    {
+      "bomrec_code": "21121466-602",
+      "ad": "Tüm Gövde Borusu",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "21121466-601",
+      "sub_item_name": "Gövde Borusu",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 4
+    },
+    {
+      "bomrec_code": "21121466-602",
+      "ad": "Tüm Gövde Borusu",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "84920014",
+      "sub_item_name": "Alt Kapak",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 4
+    },
+    {
+      "bomrec_code": "21121466-602",
+      "ad": "Tüm Gövde Borusu",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "83529993",
+      "sub_item_name": "Bilezik",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 4
+    },
+    {
+      "bomrec_code": "21121466-602",
+      "ad": "Tüm Gövde Borusu",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "84610150",
+      "sub_item_name": "Düz Yüzük",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 4
+    },
+    {
+      "bomrec_code": "21121466-600",
+      "ad": "Silindir Borusu",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "H6000005",
+      "sub_item_name": "27.2x1.1 mm Silindir Borusu Hammadde",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 0.1538,
+      "depth": 4
+    },
+    {
+      "bomrec_code": "21121466-150",
+      "ad": "ZTY Piston Kolu",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "80001430",
+      "sub_item_name": "Piston Kolu",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 4
+    },
+    {
+      "bomrec_code": "21121466-150",
+      "ad": "ZTY Piston Kolu",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "81820016",
+      "sub_item_name": "Zıplama Tampon Yatağı",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 1,
+      "depth": 4
+    },
+    {
+      "bomrec_code": "21121466-601",
+      "ad": "Gövde Borusu",
+      "par_pro_spec": "",
+      "bomrec_kaynakcode": "H6010010",
+      "sub_item_name": "44.5x1.5mm Gövde Borusu Hammadde",
+      "sub_pro_spec": "",
+      "bomrec_kaynak0": 0.1818,
+      "depth": 5
+    }
+  ],
+  "count": 47,
+  "message": "BOM data retrieved successfully"
+}

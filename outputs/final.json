@@ -1,0 +1,476 @@
+{
+  "data": [
+    {
+      "parent-number": "360004",
+      "parent-name": "减震器，驾驶室 - 波纹管式",
+      "par_pro_spec": "",
+      "child-number": "216002",
+      "child-name": "驾驶室气囊",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 1
+    },
+    {
+      "parent-number": "360004",
+      "parent-name": "减震器，驾驶室 - 波纹管式",
+      "par_pro_spec": "",
+      "child-number": "116004P",
+      "child-name": "SKD 减震器，驾驶室",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 1
+    },
+    {
+      "parent-number": "116004P",
+      "parent-name": "SKD 减震器，驾驶室",
+      "par_pro_spec": "",
+      "child-number": "116004P-050",
+      "child-name": "减震器主体",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 2
+    },
+    {
+      "parent-number": "116004P",
+      "parent-name": "SKD 减震器，驾驶室",
+      "par_pro_spec": "",
+      "child-number": "700004",
+      "child-name": "菲乐波克斯PR-7180黑色涂料",
+      "sub_pro_spec": "",
+      "child-quantity": 0.0199,
+      "depth": 2
+    },
+    {
+      "parent-number": "116004P",
+      "parent-name": "SKD 减震器，驾驶室",
+      "par_pro_spec": "",
+      "child-number": "700005",
+      "child-name": "菲拉固EP-10400固化剂",
+      "sub_pro_spec": "",
+      "child-quantity": 0.00284,
+      "depth": 2
+    },
+    {
+      "parent-number": "116004P",
+      "parent-name": "SKD 减震器，驾驶室",
+      "par_pro_spec": "",
+      "child-number": "700006",
+      "child-name": "菲拉辛EP-1002稀释剂",
+      "sub_pro_spec": "",
+      "child-quantity": 0.0111,
+      "depth": 2
+    },
+    {
+      "parent-number": "116004P",
+      "parent-name": "SKD 减震器，驾驶室",
+      "par_pro_spec": "",
+      "child-number": "94601052",
+      "child-name": "SKD 吊环总成",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 2
+    },
+    {
+      "parent-number": "116004P",
+      "parent-name": "SKD 减震器，驾驶室",
+      "par_pro_spec": "",
+      "child-number": "84750291",
+      "child-name": "带衬套橡胶",
+      "sub_pro_spec": "",
+      "child-quantity": 2,
+      "depth": 2
+    },
+    {
+      "parent-number": "116004P",
+      "parent-name": "SKD 减震器，驾驶室",
+      "par_pro_spec": "",
+      "child-number": "80250130",
+      "child-name": "Plastik Gövde Kapağı",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 2
+    },
+    {
+      "parent-number": "116004P",
+      "parent-name": "SKD 减震器，驾驶室",
+      "par_pro_spec": "",
+      "child-number": "80250123",
+      "child-name": "防振缓冲块",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 2
+    },
+    {
+      "parent-number": "116004P",
+      "parent-name": "SKD 减震器，驾驶室",
+      "par_pro_spec": "",
+      "child-number": "PS-RSC-014",
+      "child-name": "PAKETLEME STANDARDI (RESCO BASKILI ÇOKLU KOLİ)",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 2
+    },
+    {
+      "parent-number": "116004P",
+      "parent-name": "SKD 减震器，驾驶室",
+      "par_pro_spec": "",
+      "child-number": "PS-RSC-017",
+      "child-name": "PAKETLEME STANDARTI RESCO",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 2
+    },
+    {
+      "parent-number": "94601052",
+      "parent-name": "SKD 吊环总成",
+      "par_pro_spec": "",
+      "child-number": "84610150",
+      "child-name": "吊环",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 3
+    },
+    {
+      "parent-number": "94601052",
+      "parent-name": "SKD 吊环总成",
+      "par_pro_spec": "",
+      "child-number": "84500039",
+      "child-name": "连接轴",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 3
+    },
+    {
+      "parent-number": "116004P-050",
+      "parent-name": "减震器主体",
+      "par_pro_spec": "",
+      "child-number": "21121466-602",
+      "child-name": "贮液筒总成",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 3
+    },
+    {
+      "parent-number": "116004P-050",
+      "parent-name": "减震器主体",
+      "par_pro_spec": "",
+      "child-number": "21121466-600",
+      "child-name": "工作缸",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 3
+    },
+    {
+      "parent-number": "116004P-050",
+      "parent-name": "减震器主体",
+      "par_pro_spec": "",
+      "child-number": "83120002",
+      "child-name": "护碗",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 3
+    },
+    {
+      "parent-number": "116004P-050",
+      "parent-name": "减震器主体",
+      "par_pro_spec": "",
+      "child-number": "83230001",
+      "child-name": "补偿阀弹簧",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 3
+    },
+    {
+      "parent-number": "116004P-050",
+      "parent-name": "减震器主体",
+      "par_pro_spec": "",
+      "child-number": "83040005",
+      "child-name": "压缩阀体",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 3
+    },
+    {
+      "parent-number": "116004P-050",
+      "parent-name": "减震器主体",
+      "par_pro_spec": "",
+      "child-number": "77250030",
+      "child-name": "复原阀阀片",
+      "sub_pro_spec": "",
+      "child-quantity": 4,
+      "depth": 3
+    },
+    {
+      "parent-number": "116004P-050",
+      "parent-name": "减震器主体",
+      "par_pro_spec": "",
+      "child-number": "77250020",
+      "child-name": "复原阀阀片",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 3
+    },
+    {
+      "parent-number": "116004P-050",
+      "parent-name": "减震器主体",
+      "par_pro_spec": "",
+      "child-number": "78250006",
+      "child-name": "压缩阀节流片",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 3
+    },
+    {
+      "parent-number": "116004P-050",
+      "parent-name": "减震器主体",
+      "par_pro_spec": "",
+      "child-number": "83340002",
+      "child-name": "压缩阀座",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 3
+    },
+    {
+      "parent-number": "116004P-050",
+      "parent-name": "减震器主体",
+      "par_pro_spec": "",
+      "child-number": "82220002",
+      "child-name": "限位板/油封弹簧挡圈",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 3
+    },
+    {
+      "parent-number": "116004P-050",
+      "parent-name": "减震器主体",
+      "par_pro_spec": "",
+      "child-number": "76250170",
+      "child-name": "复原阀调整垫片",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 3
+    },
+    {
+      "parent-number": "116004P-050",
+      "parent-name": "减震器主体",
+      "par_pro_spec": "",
+      "child-number": "73250030",
+      "child-name": "流通阀片",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 3
+    },
+    {
+      "parent-number": "116004P-050",
+      "parent-name": "减震器主体",
+      "par_pro_spec": "",
+      "child-number": "72410020",
+      "child-name": "复原阀节流阀片",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 3
+    },
+    {
+      "parent-number": "116004P-050",
+      "parent-name": "减震器主体",
+      "par_pro_spec": "",
+      "child-number": "82040032",
+      "child-name": "活塞",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 3
+    },
+    {
+      "parent-number": "116004P-050",
+      "parent-name": "减震器主体",
+      "par_pro_spec": "",
+      "child-number": "75250020",
+      "child-name": "复原阀阀片",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 3
+    },
+    {
+      "parent-number": "116004P-050",
+      "parent-name": "减震器主体",
+      "par_pro_spec": "",
+      "child-number": "75250025",
+      "child-name": "复原阀阀片",
+      "sub_pro_spec": "",
+      "child-quantity": 2,
+      "depth": 3
+    },
+    {
+      "parent-number": "116004P-050",
+      "parent-name": "减震器主体",
+      "par_pro_spec": "",
+      "child-number": "76250115",
+      "child-name": "复原阀调整垫片",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 3
+    },
+    {
+      "parent-number": "116004P-050",
+      "parent-name": "减震器主体",
+      "par_pro_spec": "",
+      "child-number": "76250150",
+      "child-name": "复原阀调整垫片",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 3
+    },
+    {
+      "parent-number": "116004P-050",
+      "parent-name": "减震器主体",
+      "par_pro_spec": "",
+      "child-number": "82840002",
+      "child-name": "复原阀",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 3
+    },
+    {
+      "parent-number": "116004P-050",
+      "parent-name": "减震器主体",
+      "par_pro_spec": "",
+      "child-number": "80100064",
+      "child-name": "装车螺母",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 3
+    },
+    {
+      "parent-number": "116004P-050",
+      "parent-name": "减震器主体",
+      "par_pro_spec": "",
+      "child-number": "21121466-150",
+      "child-name": "ZTY 活塞杆",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 3
+    },
+    {
+      "parent-number": "116004P-050",
+      "parent-name": "减震器主体",
+      "par_pro_spec": "",
+      "child-number": "81950016",
+      "child-name": "缓冲块",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 3
+    },
+    {
+      "parent-number": "116004P-050",
+      "parent-name": "减震器主体",
+      "par_pro_spec": "",
+      "child-number": "81240142",
+      "child-name": "导向器",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 3
+    },
+    {
+      "parent-number": "116004P-050",
+      "parent-name": "减震器主体",
+      "par_pro_spec": "",
+      "child-number": "81150144",
+      "child-name": "油封",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 3
+    },
+    {
+      "parent-number": "116004P-050",
+      "parent-name": "减震器主体",
+      "par_pro_spec": "",
+      "child-number": "700001",
+      "child-name": "减震器油HD15",
+      "sub_pro_spec": "",
+      "child-quantity": 0.099,
+      "depth": 3
+    },
+    {
+      "parent-number": "21121466-602",
+      "parent-name": "贮液筒总成",
+      "par_pro_spec": "",
+      "child-number": "21121466-601",
+      "child-name": "壳体管",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 4
+    },
+    {
+      "parent-number": "21121466-602",
+      "parent-name": "贮液筒总成",
+      "par_pro_spec": "",
+      "child-number": "84920014",
+      "child-name": "贮液筒底座",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 4
+    },
+    {
+      "parent-number": "21121466-602",
+      "parent-name": "贮液筒总成",
+      "par_pro_spec": "",
+      "child-number": "83529993",
+      "child-name": "垫片(圈)、阀垫",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 4
+    },
+    {
+      "parent-number": "21121466-602",
+      "parent-name": "贮液筒总成",
+      "par_pro_spec": "",
+      "child-number": "84610150",
+      "child-name": "吊环",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 4
+    },
+    {
+      "parent-number": "21121466-600",
+      "parent-name": "工作缸",
+      "par_pro_spec": "",
+      "child-number": "H6000005",
+      "child-name": "27.2x1.1 mm 气缸管原材料",
+      "sub_pro_spec": "",
+      "child-quantity": 0.1538,
+      "depth": 4
+    },
+    {
+      "parent-number": "21121466-150",
+      "parent-name": "ZTY 活塞杆",
+      "par_pro_spec": "",
+      "child-number": "80001430",
+      "child-name": "活塞杆",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 4
+    },
+    {
+      "parent-number": "21121466-150",
+      "parent-name": "ZTY 活塞杆",
+      "par_pro_spec": "",
+      "child-number": "81820016",
+      "child-name": "复原限位环座",
+      "sub_pro_spec": "",
+      "child-quantity": 1,
+      "depth": 4
+    },
+    {
+      "parent-number": "21121466-601",
+      "parent-name": "壳体管",
+      "par_pro_spec": "",
+      "child-number": "H6010010",
+      "child-name": "44.5x1.5mm Gövde Borusu Hammadde",
+      "sub_pro_spec": "",
+      "child-quantity": 0.1818,
+      "depth": 5
+    }
+  ],
+  "count": 47,
+  "message": "BOM data with Chinese translations retrieved successfully"
+}
