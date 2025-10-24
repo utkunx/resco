@@ -6,6 +6,37 @@ This document tracks important decisions, features, and architectural changes ma
 
 ## 2025-10-24
 
+### Translation Error Tracking for bomcn and bomcombined Endpoints
+**Status**: ✅ Implemented
+
+Added `translate-error` field to `/api/bomcn/{itemCode}` and `/api/bomcombined/{itemCode}` responses to track translation failures:
+
+**New Response Field**:
+- `translate-error`: Status message about translation success
+
+**Two Scenarios**:
+1. **All translated**: `"translate-error": "All products have been translated"`
+2. **Some missing**: `"translate-error": "These products numbers does not have translating values + 360004 + CP20250"`
+
+**Implementation Details**:
+- Added `TranslateWithFallbackTracking()` function that returns translation success status
+- Added `ApplyTranslationsToBOMWithTracking()` to track untranslated item codes
+- Added `GetBOMByCodeWithTranslationTracking()` and `GetBOMByCodeCombinedWithTracking()` service functions
+- Handlers build formatted message listing all untranslated product codes
+
+**Rationale**:
+- Visibility into translation coverage
+- Easy identification of missing translation entries
+- Helps maintain translation dictionaries
+- Alerts when new products need translation entries
+
+**Files**:
+- `services/translation.go` - Added tracking functions
+- `services/bom.go` - Added tracking versions of BOM functions
+- `handlers/bom_handler.go` - Updated bomcn and bomcombined handlers
+
+---
+
 ### Enhanced CheckProduct Endpoint Response
 **Status**: ✅ Implemented
 

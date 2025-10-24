@@ -209,6 +209,33 @@ func GetBOMByCodeWithTranslation(itemCode string) ([]BOMResult, error) {
 	return translatedResults, nil
 }
 
+// GetBOMByCodeWithTranslationTracking executes the recursive BOM query and applies Chinese translations
+// Returns translated results and a slice of item codes that failed to translate
+func GetBOMByCodeWithTranslationTracking(itemCode string) ([]BOMResult, []string, error) {
+	// Get the BOM data
+	results, err := GetBOMByCodeParameterized(itemCode)
+	if err != nil {
+		return nil, nil, err
+	}
+
+	// Load translations if not already loaded
+	err = LoadTranslations()
+	if err != nil {
+		return nil, nil, fmt.Errorf("error loading translations: %v", err)
+	}
+
+	// Load fallback translations if not already loaded
+	err = LoadFallbackTranslations()
+	if err != nil {
+		return nil, nil, fmt.Errorf("error loading fallback translations: %v", err)
+	}
+
+	// Apply translations and track failures
+	translatedResults, untranslatedCodes := ApplyTranslationsToBOMWithTracking(results)
+
+	return translatedResults, untranslatedCodes, nil
+}
+
 // GetBOMByCodeCombined executes the recursive BOM query and returns both Turkish and Chinese
 func GetBOMByCodeCombined(itemCode string) ([]BOMResultCombined, error) {
 	// Get the BOM data
@@ -253,6 +280,73 @@ func GetBOMByCodeCombined(itemCode string) ([]BOMResultCombined, error) {
 	}
 
 	return combinedResults, nil
+}
+
+// GetBOMByCodeCombinedWithTracking executes the recursive BOM query and returns both Turkish and Chinese
+// Returns combined results and a slice of item codes that failed to translate
+func GetBOMByCodeCombinedWithTracking(itemCode string) ([]BOMResultCombined, []string, error) {
+	// Get the BOM data
+	results, err := GetBOMByCodeParameterized(itemCode)
+	if err != nil {
+		return nil, nil, err
+	}
+
+	// Load translations if not already loaded
+	err = LoadTranslations()
+	if err != nil {
+		return nil, nil, fmt.Errorf("error loading translations: %v", err)
+	}
+
+	// Load fallback translations if not already loaded
+	err = LoadFallbackTranslations()
+	if err != nil {
+		return nil, nil, fmt.Errorf("error loading fallback translations: %v", err)
+	}
+
+	// Track untranslated codes
+	untranslatedCodesMap := make(map[string]bool)
+	var untranslatedCodes []string
+
+	// Create combined results with both Turkish and Chinese
+	combinedResults := make([]BOMResultCombined, len(results))
+
+	for i, result := range results {
+		// Translate parent name
+		parentTranslated, parentSuccess := TranslateWithFallbackTracking(result.AD, result.BOMRecCode)
+		if !parentSuccess && result.BOMRecCode != "" {
+			if !untranslatedCodesMap[result.BOMRecCode] {
+				untranslatedCodesMap[result.BOMRecCode] = true
+				untranslatedCodes = append(untranslatedCodes, result.BOMRecCode)
+			}
+		}
+
+		combinedResults[i] = BOMResultCombined{
+			BOMRecCode:      result.BOMRecCode,
+			AD:              result.AD,
+			ADChinese:       parentTranslated,
+			ParProSpec:      result.ParProSpec,
+			BOMRecKaynakCode: result.BOMRecKaynakCode,
+			SubItemName:     result.SubItemName,
+			SubProSpec:      result.SubProSpec,
+			BOMRecKaynak0:   result.BOMRecKaynak0,
+			Depth:           result.Depth,
+		}
+
+		// Translate child name if it exists
+		if result.SubItemName != nil && *result.SubItemName != "" {
+			childTranslated, childSuccess := TranslateWithFallbackTracking(*result.SubItemName, result.BOMRecKaynakCode)
+			combinedResults[i].SubItemNameChinese = &childTranslated
+
+			if !childSuccess && result.BOMRecKaynakCode != "" {
+				if !untranslatedCodesMap[result.BOMRecKaynakCode] {
+					untranslatedCodesMap[result.BOMRecKaynakCode] = true
+					untranslatedCodes = append(untranslatedCodes, result.BOMRecKaynakCode)
+				}
+			}
+		}
+	}
+
+	return combinedResults, untranslatedCodes, nil
 }
 
 // GetBOMTotal executes the recursive BOM query and returns unique codes with sequential numbers

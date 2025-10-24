@@ -97,6 +97,31 @@ func TranslateWithFallback(turkishText string, itemCode string) string {
 	return turkishText
 }
 
+// TranslateWithFallbackTracking returns the Chinese translation using fallback logic
+// Returns the translated text and a boolean indicating if translation was successful
+func TranslateWithFallbackTracking(turkishText string, itemCode string) (string, bool) {
+	translationMutex.RLock()
+	defer translationMutex.RUnlock()
+
+	// Try direct translation first
+	if chineseText, exists := translations[turkishText]; exists {
+		return chineseText, true
+	}
+
+	// If not found and itemCode is provided, try fallback based on first 4 digits
+	if itemCode != "" && len(itemCode) >= 4 {
+		prefix := itemCode[:4]
+		if prefixTranslations, exists := fallbackTranslations[prefix]; exists {
+			if chineseText, exists := prefixTranslations[turkishText]; exists {
+				return chineseText, true
+			}
+		}
+	}
+
+	// Return original text if no translation found
+	return turkishText, false
+}
+
 // ApplyTranslationsToBOM applies Chinese translations to BOM results
 func ApplyTranslationsToBOM(results []BOMResult) []BOMResult {
 	translatedResults := make([]BOMResult, len(results))
@@ -115,4 +140,42 @@ func ApplyTranslationsToBOM(results []BOMResult) []BOMResult {
 	}
 
 	return translatedResults
+}
+
+// ApplyTranslationsToBOMWithTracking applies Chinese translations to BOM results and tracks failures
+// Returns translated results and a slice of item codes that failed to translate
+func ApplyTranslationsToBOMWithTracking(results []BOMResult) ([]BOMResult, []string) {
+	translatedResults := make([]BOMResult, len(results))
+	untranslatedCodesMap := make(map[string]bool)
+	var untranslatedCodes []string
+
+	for i, result := range results {
+		translatedResults[i] = result
+
+		// Translate parent name with fallback using parent number
+		parentTranslated, parentSuccess := TranslateWithFallbackTracking(result.AD, result.BOMRecCode)
+		translatedResults[i].AD = parentTranslated
+
+		if !parentSuccess && result.BOMRecCode != "" {
+			if !untranslatedCodesMap[result.BOMRecCode] {
+				untranslatedCodesMap[result.BOMRecCode] = true
+				untranslatedCodes = append(untranslatedCodes, result.BOMRecCode)
+			}
+		}
+
+		// Translate child name if it exists, with fallback using child number
+		if result.SubItemName != nil && *result.SubItemName != "" {
+			childTranslated, childSuccess := TranslateWithFallbackTracking(*result.SubItemName, result.BOMRecKaynakCode)
+			translatedResults[i].SubItemName = &childTranslated
+
+			if !childSuccess && result.BOMRecKaynakCode != "" {
+				if !untranslatedCodesMap[result.BOMRecKaynakCode] {
+					untranslatedCodesMap[result.BOMRecKaynakCode] = true
+					untranslatedCodes = append(untranslatedCodes, result.BOMRecKaynakCode)
+				}
+			}
+		}
+	}
+
+	return translatedResults, untranslatedCodes
 }

@@ -63,21 +63,39 @@ func GetBOMByItemCodeCN(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Call the service to get BOM data with Chinese translations
-	results, err := services.GetBOMByCodeWithTranslation(itemCode)
+	// Call the service to get BOM data with Chinese translations and track failures
+	results, untranslatedCodes, err := services.GetBOMByCodeWithTranslationTracking(itemCode)
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
 		json.NewEncoder(w).Encode(ErrorResponse{Error: err.Error()})
 		return
 	}
 
+	// Build translate-error message
+	translateError := ""
+	if len(untranslatedCodes) == 0 {
+		translateError = "All products have been translated"
+	} else {
+		translateError = "These products numbers does not have translating values + "
+		for i, code := range untranslatedCodes {
+			if i > 0 {
+				translateError += " + "
+			}
+			translateError += code
+		}
+	}
+
+	// Create custom response with translate-error field
+	response := map[string]interface{}{
+		"data":            results,
+		"count":           len(results),
+		"translate-error": translateError,
+		"message":         "BOM data with Chinese translations retrieved successfully",
+	}
+
 	// Return success response
 	w.WriteHeader(http.StatusOK)
-	json.NewEncoder(w).Encode(SuccessResponse{
-		Data:    results,
-		Count:   len(results),
-		Message: "BOM data with Chinese translations retrieved successfully",
-	})
+	json.NewEncoder(w).Encode(response)
 }
 
 // GetBOMByItemCodeCombined handles GET requests for BOM data with both Turkish and Chinese
@@ -94,21 +112,39 @@ func GetBOMByItemCodeCombined(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Call the service to get BOM data with both Turkish and Chinese
-	results, err := services.GetBOMByCodeCombined(itemCode)
+	// Call the service to get BOM data with both Turkish and Chinese and track failures
+	results, untranslatedCodes, err := services.GetBOMByCodeCombinedWithTracking(itemCode)
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
 		json.NewEncoder(w).Encode(ErrorResponse{Error: err.Error()})
 		return
 	}
 
+	// Build translate-error message
+	translateError := ""
+	if len(untranslatedCodes) == 0 {
+		translateError = "All products have been translated"
+	} else {
+		translateError = "These products numbers does not have translating values + "
+		for i, code := range untranslatedCodes {
+			if i > 0 {
+				translateError += " + "
+			}
+			translateError += code
+		}
+	}
+
+	// Create custom response with translate-error field
+	response := map[string]interface{}{
+		"data":            results,
+		"count":           len(results),
+		"translate-error": translateError,
+		"message":         "BOM data with Turkish and Chinese retrieved successfully",
+	}
+
 	// Return success response
 	w.WriteHeader(http.StatusOK)
-	json.NewEncoder(w).Encode(SuccessResponse{
-		Data:    results,
-		Count:   len(results),
-		Message: "BOM data with Turkish and Chinese retrieved successfully",
-	})
+	json.NewEncoder(w).Encode(response)
 }
 
 // GetBOMTotal handles GET requests for unique BOM codes with sequential numbers
