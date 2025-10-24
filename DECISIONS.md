@@ -6,6 +6,25 @@ This document tracks important decisions, features, and architectural changes ma
 
 ## 2025-10-24
 
+### Git Repository and GitHub Integration
+**Status**: ✅ Implemented
+
+Initialized git repository and pushed to GitHub:
+- Repository: https://github.com/utkunx/resco
+- Created .gitignore to exclude sensitive files (.env, IDE files, binaries)
+- Initial commit with 22 files, 3661 lines of code
+- Comprehensive commit message documenting all features
+
+**Files Excluded from Git**:
+- `.env` - Environment variables with sensitive data
+- `.idea/` - IDE configuration files
+- Compiled binaries (`resco`)
+- OS files (`.DS_Store`)
+
+**Repository Structure**: All source code, documentation, and translation files are version controlled.
+
+---
+
 ### Product Check Endpoint with Heihu API Validation
 **Status**: ✅ Implemented
 
