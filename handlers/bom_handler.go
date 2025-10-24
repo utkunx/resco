@@ -87,10 +87,11 @@ func GetBOMByItemCodeCN(w http.ResponseWriter, r *http.Request) {
 
 	// Create custom response with translate-error field
 	response := map[string]interface{}{
-		"data":            results,
-		"count":           len(results),
-		"translate-error": translateError,
-		"message":         "BOM data with Chinese translations retrieved successfully",
+		"data":                  results,
+		"count":                 len(results),
+		"translate-error":       translateError,
+		"translate-error-count": len(untranslatedCodes),
+		"message":               "BOM data with Chinese translations retrieved successfully",
 	}
 
 	// Return success response
@@ -136,10 +137,11 @@ func GetBOMByItemCodeCombined(w http.ResponseWriter, r *http.Request) {
 
 	// Create custom response with translate-error field
 	response := map[string]interface{}{
-		"data":            results,
-		"count":           len(results),
-		"translate-error": translateError,
-		"message":         "BOM data with Turkish and Chinese retrieved successfully",
+		"data":                  results,
+		"count":                 len(results),
+		"translate-error":       translateError,
+		"translate-error-count": len(untranslatedCodes),
+		"message":               "BOM data with Turkish and Chinese retrieved successfully",
 	}
 
 	// Return success response

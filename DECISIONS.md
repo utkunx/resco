@@ -9,14 +9,15 @@ This document tracks important decisions, features, and architectural changes ma
 ### Translation Error Tracking for bomcn and bomcombined Endpoints
 **Status**: ✅ Implemented
 
-Added `translate-error` field to `/api/bomcn/{itemCode}` and `/api/bomcombined/{itemCode}` responses to track translation failures:
+Added `translate-error` and `translate-error-count` fields to `/api/bomcn/{itemCode}` and `/api/bomcombined/{itemCode}` responses to track translation failures:
 
-**New Response Field**:
+**New Response Fields**:
 - `translate-error`: Status message about translation success
+- `translate-error-count`: Total number of untranslated item codes
 
 **Two Scenarios**:
-1. **All translated**: `"translate-error": "All products have been translated"`
-2. **Some missing**: `"translate-error": "These products numbers does not have translating values + 360004 + CP20250"`
+1. **All translated**: `"translate-error": "All products have been translated"`, `"translate-error-count": 0`
+2. **Some missing**: `"translate-error": "These products numbers does not have translating values + 360004 + CP20250"`, `"translate-error-count": 2`
 
 **Implementation Details**:
 - Added `TranslateWithFallbackTracking()` function that returns translation success status

@@ -115,12 +115,13 @@ GET /api/bomcn/{itemCode}
 
 Returns BOM data with Turkish names translated to Chinese.
 
-Response includes `translate-error` field:
+Response includes `translate-error` and `translate-error-count` fields:
 ```json
 {
   "data": [...],
   "count": 10,
   "translate-error": "All products have been translated",
+  "translate-error-count": 0,
   "message": "BOM data with Chinese translations retrieved successfully"
 }
 ```
@@ -131,6 +132,7 @@ If translations are missing:
   "data": [...],
   "count": 10,
   "translate-error": "These products numbers does not have translating values + 360004 + CP20250",
+  "translate-error-count": 2,
   "message": "BOM data with Chinese translations retrieved successfully"
 }
 ```
@@ -140,7 +142,18 @@ If translations are missing:
 GET /api/bomcombined/{itemCode}
 ```
 
-Returns BOM data with both Turkish and Chinese names. Also includes `translate-error` field to track missing translations.
+Returns BOM data with both Turkish and Chinese names. Also includes `translate-error` and `translate-error-count` fields to track missing translations.
+
+Example response with missing translations:
+```json
+{
+  "data": [...],
+  "count": 15,
+  "translate-error": "These products numbers does not have translating values + 360004 + ABC123",
+  "translate-error-count": 2,
+  "message": "BOM data with Turkish and Chinese retrieved successfully"
+}
+```
 
 ### Get BOM Total (Unique Codes)
 ```
